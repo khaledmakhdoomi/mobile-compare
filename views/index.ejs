@@ -1,0 +1,106 @@
+<%- include head %>
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Mobile</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+            
+            <% for(mob of mobileList) { %>
+
+			    <%- include post/postpreview %>
+
+		     <% } %>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <div class="parallax">
+    <!-- <div style="height:1000px;background-color:green;font-size:36px"></div> -->
+    <section class="text-black mb-0" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-black">About</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-8 ml-auto">
+           <ol>
+               <li>B.Cheraghi</li>
+               <li>S.Ghaderi</li>
+               <li>Ghanbari</li>
+               <li>Mahmoudi</li>
+               <li>Khaled Makhdoomi </li>
+               
+          </ol>
+        </div>
+        <div class="col-lg-4 text-center mt-4">
+          <a class="btn btn-xl btn-outline-dark" href="#">
+            <i class="fa fa-hand-o-right mr-2"></i>
+            Follow Us!
+          </a>
+        </div>
+      </div>
+           </div>
+    </section>
+  <!-- </div> -->
+   
+ </div>
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Register Mobile</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+          <form action="" method="post" encType="multipart/form-data" ref='uploadForm'  >
+  <div class="form-group">
+    <label for="model">Model:</label>
+    <input type="name" required class="form-control" id="model" name="model">
+  </div>
+  <div class="form-group">
+    <label for="brand">Brand:</label>
+    <input type="name" required class="form-control" id="brand" name="brand">
+  </div>  
+    <div class="form-group">
+    <label for="weight">weight:</label>
+    <input type="number" required class="form-control" id="weight" name="weight">
+  </div>  
+    <div class="form-group">
+    <label for="os">os:</label>
+    <input type="name" required class="form-control" id="os" name="os">
+  </div>  
+    <div class="form-group">
+    <label for="sim">sim:</label>
+    <input type="number" required class="form-control" id="sim" name="sim">
+  </div>  
+      <div class="form-group">
+    <label for="camera">camera:</label>
+    <input type="number" required class="form-control" id="camera" name="camera">
+  </div>  
+      <div class="form-group">
+    <label for="net">net:</label>
+    <input type="name" required class="form-control" id="net" name="net">
+  </div>  
+      <div class="form-group">
+    <label for="color">color:</label>
+    <input type="name" required class="form-control" id="color" name="color">
+  </div>  
+      <div class="form-group">
+    <label for="comment">comment:</label>
+    <textarea  class="form-control" id="comment" name="comment"></textarea>
+  </div>  
+  <div class="form-group">
+      <input type="file" name="upfile"  class="btn btn-primary">
+    </div>
+  <div class="form-group">
+    <input type="submit" name="submit" value="Post" class="btn btn-primary">
+  </div>
+ 
+</form>
+          </div>
+        </div>
+      </div>
+    </section>
+<%- include foot %>
