@@ -1,0 +1,32 @@
+{
+  "name": "mobile",
+  "version": "1.0.0",
+  "description": "Compare some features of mobile phones",
+  "main": "mobile.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-fileupload": "^0.4.0",
+    "jquery": "^3.3.1",
+    "nodemon": "^1.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khaledmakhdoomi/mobile-compare.git"
+  },
+  "keywords": [
+    "Mobile",
+    "Compare"
+  ],
+  "author": "Best Group",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khaledmakhdoomi/mobile-compare/issues"
+  },
+  "homepage": "https://github.com/khaledmakhdoomi/mobile-compare#readme"
+}
